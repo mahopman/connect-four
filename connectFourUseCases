@@ -1,0 +1,29 @@
+Important Nouns
+	Game
+	Player
+	Tile
+	Board
+	Score ??
+	Move ??
+
+Use Cases
+	New Game
+		Participating Actor: Initiated by player
+		Entry Condition: Program must be open.
+		Exit Critera: A new game has been created.
+		Flow of Events:	1. Player requests to start a new game.
+						2. Connect Four App creates a new game and updates the display.
+	Drop Tile
+		Participating Actor: Initiated by player
+		Entry Condition: Game must be started. 
+		Exit Criteria: Blue tile has been placed on board. Connect Four App places an opposing red tile. ??
+		Flow of Events:	1. Player requests to drop a blue tile.
+						2. Connect Four App adds a blue tile to requested column and updates the display.
+						3. Connect Four App tile requests to drop a red tile.
+						4. Connect Four App adds a red tile to requested column and updates the display.
+	Win Game -- extends Drop Tile
+		Participating Actor: Initiated by player
+		Entry Condition: Three blue tiles are placed on the board in either a vertical, horizontal, or 						 diagonal line with an empty spot on either side of the line. The empty spot must have 					enough tiles placed underneath so that the next tile dropped in that column will be 				 placed in the empty spot.
+		Exit Criteria: Blue tile has been placed on board.
+		Flow of Events: 1. Player requests to drop a blue tile in an empty spot that would complete a line of 				  four blue tiles.
+						2. Connect Four App adds a blue tile to the requested column, indicates the game has been won, and updates the display.
